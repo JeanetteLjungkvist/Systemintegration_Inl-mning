@@ -1,0 +1,6 @@
+C:\Users\jeane\source\repos\Systemintegration_Inl-mning\LoginService\obj\Debug\net7.0\LoginService.csproj.AssemblyReference.cache
+C:\Users\jeane\source\repos\Systemintegration_Inl-mning\LoginService\obj\Debug\net7.0\LoginService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeane\source\repos\Systemintegration_Inl-mning\LoginService\obj\Debug\net7.0\LoginService.AssemblyInfoInputs.cache
+C:\Users\jeane\source\repos\Systemintegration_Inl-mning\LoginService\obj\Debug\net7.0\LoginService.AssemblyInfo.cs
+C:\Users\jeane\source\repos\Systemintegration_Inl-mning\LoginService\obj\Debug\net7.0\LoginService.csproj.CoreCompileInputs.cache
+C:\Users\jeane\source\repos\Systemintegration_Inl-mning\LoginService\obj\Debug\net7.0\LoginService.MvcApplicationPartsAssemblyInfo.cache
