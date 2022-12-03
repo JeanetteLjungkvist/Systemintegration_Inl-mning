@@ -7,6 +7,6 @@ namespace LoginService
     {
         public LoginContext(DbContextOptions<LoginContext> options) : base(options) { }
 
-        public DbSet<User> Users => new DbSet<User>();
+        public DbSet<User> Users { get; set; }
     }
 }
