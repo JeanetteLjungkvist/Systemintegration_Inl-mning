@@ -9,14 +9,19 @@ using LoginService.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<LoginContext>(opt =>
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<LoginContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<LoginContext>();
+    db.Database.Migrate();
+}
+
 app.MapPost("/register", async (User user, LoginContext db) =>
 {
-    db.Users.Add(user);
+    await db.Users.AddAsync(user);
     await db.SaveChangesAsync();
 
     return Results.Created("/login", "Success!!!");
@@ -24,10 +29,9 @@ app.MapPost("/register", async (User user, LoginContext db) =>
 
 app.MapPost("/login", async (UserLogin userLogin, LoginContext db) =>
 {
-    var user = await db.Users.FirstOrDefaultAsync(user =>
-        user.Email.Equals(userLogin.Email) && user.Password.Equals(userLogin.Password));
+    var user = await db.Users.FirstOrDefaultAsync(user => user.Email.Equals(userLogin.Email) && user.Password.Equals(userLogin.Password));
 
-    if (user == null) return Results.NotFound("Username or password is incorrect!");
+    if (user == null) return Results.NotFound("Wrong username or password!");
 
     var secretKey = builder.Configuration["Jwt:Key"];
 

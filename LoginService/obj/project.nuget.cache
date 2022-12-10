@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aZFDkM6scsFcaZOdOIlon+bCAA02nP738DQIKMUgMB94r8heNFUXMSOg6mzLK5TJq9/4Ic1sv0QXd92CkR73Jw==",
+  "dgSpecHash": "ozVRkUK4Pz6aQPrVEDBx5B/f1q24Xn33nv773WCc7K9xJ/0mSGESclTDBIBJ81Btspj5gjz8RMHCSsEFQbi7mg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jeane\\source\\repos\\Systemintegration_Inl-mning\\LoginService\\LoginService.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\jeane\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.0\\microsoft.aspnetcore.authentication.jwtbearer.7.0.0.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\7.0.0\\microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.0.nupkg.sha512",
+    "C:\\Users\\jeane\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
@@ -40,6 +41,7 @@
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.25.1\\microsoft.identitymodel.tokens.6.25.1.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\jeane\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\jeane\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
