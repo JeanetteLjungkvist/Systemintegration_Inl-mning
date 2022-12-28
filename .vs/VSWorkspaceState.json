@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\LoginService"
+    "\\LoginService",
+    "\\PaymentService"
   ],
-  "SelectedNode": "\\LoginService\\DockerFile",
+  "SelectedNode": "\\PaymentService\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -19,17 +19,17 @@ using (var scope = app.Services.CreateScope())
     db.Database.Migrate();
 }
 
-app.MapPost("/register", async (User user, LoginContext db) =>
+app.MapPost("/register", async (User user, LoginContext ctx) =>
 {
-    await db.Users.AddAsync(user);
-    await db.SaveChangesAsync();
+    await ctx.Users.AddAsync(user);
+    await ctx.SaveChangesAsync();
 
     return Results.Created("/login", "Success!!!");
 });
 
-app.MapPost("/login", async (UserLogin userLogin, LoginContext db) =>
+app.MapPost("/login", async (UserLogin userLogin, LoginContext ctx) =>
 {
-    var user = await db.Users.FirstOrDefaultAsync(user => user.Email.Equals(userLogin.Email) && user.Password.Equals(userLogin.Password));
+    var user = await ctx.Users.FirstOrDefaultAsync(user => user.Email.Equals(userLogin.Email) && user.Password.Equals(userLogin.Password));
 
     if (user == null) return Results.NotFound("Wrong username or password!");
 
